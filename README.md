@@ -18,27 +18,23 @@ Every organisation has its own CA
 The client side application is in the folder certification-network/application
 
 How to start the network: 
+0. Run npm install inside application and chaincode folder - package.json files are defined inside for dependencies
+
 1. Open terminal inside certification-network/network and enter: ./fabricNetwork.sh up
 This will start the network, generate crypto-config files and docker container files
 
 2. Now enter: ./fabricNetwork.sh install
 This will install and instantiate the chaincode on peer0 of all organisation and instantitate on MHRD's peer. 
 
-3. Now Open terminal inside the certification-network/application and enter: npm init 
-4. Now enterL npm install
-
-Now, before we start the localhost on port:3000, we need to make sure the identities of all the 
-organisations are inside the folder ‘identities’ in the application directory.
-Click on the 1_addToWallet.js file inside certification-network/application directory to open it.The function main()
-has parameters signcerts and Keystore: main(path_to_signcert_file.pem, path_to_keystore_file_sk)
-The file inside the Keystore changes every time the network is started, and that is why it is
-important to follow this step.
-
-5. Now enter: node .
+3. Now inside certification-network/application directory, enter: node .
 This will start the node application on localhost:3000  
 
-6. Finally open the index.html file inside certification-network/application/client directory to open the client application
+4. Finally open the index.html file inside certification-network/application/client directory to open the client application
 
-Done.
+5. Copy the path of file inside directory 
+Certificate File Inside: certification-network/network/crypto-config/peerOrganizations/mhrd.certification-network.com/users/Admin@mhrd.certification-network.com/msp/signcerts/
+Private Key File inside: certification-network/network/crypto-config/peerOrganizations/mhrd.certification-network.com/users/Admin@mhrd.certification-network.com/msp/keystore/
+
+6. Done. Play with network by adding new students and issuing them certificates - and verifying the certs by adding the hash
 
 
