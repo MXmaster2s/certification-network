@@ -1,0 +1,4 @@
+application/node_modules
+application/identity
+chaincode/node_modules
+network/node_modules
