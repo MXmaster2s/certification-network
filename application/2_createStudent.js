@@ -79,8 +79,8 @@ async function getContractInstance() {
 	return channel.getContract('certnet', 'org.certification-network.certnet');
 }
 
-main('200', 'Aakash Bansal', 'connect@aakashbansal.com').then(() => {
+/* main('200', 'Aakash Bansal', 'connect@aakashbansal.com').then(() => {
 	console.log('Student account created');
-});
+}); */
 
 module.exports.execute = main;

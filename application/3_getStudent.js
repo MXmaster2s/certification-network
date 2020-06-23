@@ -37,8 +37,10 @@ async function main(studentId) {
 	}
 }
 
-main('200').then(() => {
+/* main('200').then(() => {
 
 	console.log('.....API Execution Complete!');
 
-});
+}); */
+
+module.exports.execute = main;

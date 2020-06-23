@@ -34,8 +34,8 @@ async function main(studentId, courseId, grade, hash) {
 	}
 }
 
-main('200', 'PGDBC', 'A', 'asdfgh').then(() => {
+/* main('200', 'PGDBC', 'A', 'asdfgh').then(() => {
 	console.log('Certificate created for the student');
-});
+}); */
 
 module.exports.execute = main;

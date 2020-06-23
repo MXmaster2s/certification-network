@@ -42,8 +42,8 @@ async function main(studentId, courseId, hash) {
 	}
 }
 
-main('200', 'PGDBC', 'asdfgh').then(() => {
+/* main('200', 'PGDBC', 'asdfgh').then(() => {
 	console.log('Verification result available');
-});
+}); */
 
 module.exports.execute = main;
