@@ -294,7 +294,7 @@ function generateChannelArtifacts() {
 
   echo
   echo "#################################################################"
-  echo "#######    Generating anchor peer update for iitMSP   ##########"
+  echo "#######    Generating anchor peer update for iitMSP   ###########"
   echo "#################################################################"
   set -x
   configtxgen -profile CertificationChannel -outputAnchorPeersUpdate ./channel-artifacts/iitMSPanchors.tx -channelID "$CHANNEL_NAME" -asOrg iitMSP
